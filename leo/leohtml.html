@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" href="e.png">
+    <title>PZ-FLIX</title>
+</head>
+<link rel="stylesheet" type="text/css" href="leocss.css">
+<title>Video Player</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative; /* Position relative for absolute positioning */
+    }
+    .logo{
+margin-left: 60px;
+margin-top: 50px;
+
+}
+.logo img{
+    height: 7vh;
+}
+.logo h3{
+    color:rgb(3, 31, 31);
+    font-size: 25px;
+    margin-top: -35px;
+
+    margin-left: 50px;
+}
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        text-align: center;
+    }
+    video {
+        width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="e.png" alt="">
+        <h3>PZ-FLIX</h3>
+    </div>
+
+<div class="container">
+    <h1>LEO</h1>
+    <video controls>
+        <source src="leo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <a href="leo.mp4" download class="download-btn">Download Video</a>
+</div>
+<script>
+    if (window.self !== window.top) {
+        window.top.location.href = "leohtml.html";
+    }
+</script>
+</body>
+</html>
